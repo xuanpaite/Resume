@@ -104,13 +104,13 @@ a:hover {
 
 .Top-cloud {
   position: absolute;
-  right: 300Px;
+  right: 150Px;
   top: 40px;
 }
 
 .Bottom-cloud {
   position: absolute;
-  left: 250Px;
+  left: 100Px;
   bottom: 400Px;
 }
 
