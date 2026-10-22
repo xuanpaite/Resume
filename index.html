@@ -1,61 +1,177 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Lam Tonsing</title>
-    <link rel="stylesheet" href="CSS/style.CSS">
-    <link rel="icon" href="images/LT.ico">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navigator">
-      <a href="index.html">Home</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lam Khansuan Tonsing | Resume</title>
+  <meta name="description" content="Head of Operations and Customer Success leader building AI products with Claude. Pune / Mumbai, India.">
+  <link rel="icon" href="images/LT.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f6f2; --card: #ffffff; --text: #1d1d1f; --muted: #5f6368;
+      --line: #e3e1da; --accent: #c2410c; --chip: #f1ede4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #141414; --card: #1c1c1e; --text: #ececec; --muted: #a1a1a6;
+              --line: #2e2e30; --accent: #fb923c; --chip: #2a2a2c; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font: 15px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 860px; margin: 32px auto; padding: 40px 48px; background: var(--card);
+           border: 1px solid var(--line); border-radius: 12px; }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0; }
+    .tagline { font-size: 17px; color: var(--accent); font-weight: 600; margin: 6px 0 10px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 14px; }
+    .contact a { color: inherit; }
+    h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+         border-bottom: 1px solid var(--line); padding-bottom: 6px; margin: 32px 0 14px; }
+    .job { margin-bottom: 22px; }
+    .job-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .job-head h3 { font-size: 16px; margin: 0; }
+    .org { font-weight: 500; }
+    .dates { color: var(--muted); font-size: 14px; white-space: nowrap; }
+    .role { margin: 2px 0; font-weight: 600; }
+    ul { margin: 6px 0 0; padding-left: 20px; }
+    li { margin: 3px 0; }
+    .project { margin-bottom: 16px; }
+    .project h3 { font-size: 15px; margin: 0; }
+    .project h3 a { color: var(--accent); }
+    .stack { color: var(--muted); font-size: 13px; margin-top: 2px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chips span { background: var(--chip); border-radius: 999px; padding: 3px 11px; font-size: 13px; }
+    .skill-group { margin-bottom: 12px; }
+    .skill-group strong { display: block; font-size: 14px; margin-bottom: 6px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+    .print { float: right; font: inherit; font-size: 13px; color: var(--accent); background: none;
+             border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+    footer { text-align: center; color: var(--muted); font-size: 12px; margin: 0 0 32px; }
+    @media (max-width: 640px) {
+      main { margin: 0; padding: 24px 16px; border: 0; border-radius: 0; }
+      .two-col { grid-template-columns: 1fr; }
+      .print { display: none; }
+    }
+    @media print {
+      :root { --bg: #fff; --card: #fff; --text: #000; --muted: #444; --line: #ccc; --accent: #9a3412; --chip: #eee; }
+      body { font-size: 12px; }
+      main { margin: 0; padding: 0; border: 0; max-width: none; }
+      .print, footer { display: none; }
+      .job, .project { break-inside: avoid; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <button class="print" onclick="window.print()">Save as PDF</button>
+  <h1>Lam Khansuan Tonsing</h1>
+  <p class="tagline">Head of Operations · Customer Success · Building AI products with Claude</p>
+  <div class="contact">
+    <span>Pune, Maharashtra, India (open to Mumbai)</span>
+    <a href="mailto:xuanpaite@gmail.com">xuanpaite@gmail.com</a>
+    <a href="https://www.linkedin.com/in/lamtonsing">linkedin.com/in/lamtonsing</a>
+    <a href="https://github.com/xuanpaite">github.com/xuanpaite</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p>Customer-focused operations leader with nearly ten years in B2B sales and lead generation, helping companies grow client relationships, improve internal processes and grow recurring revenue. Outside my day job I design, build and run my own AI products with Claude, including an AI lead-qualification platform in production use. I bring both sides together: understanding what a business needs, and building AI systems that deliver it safely and measurably.</p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><h3 class="org">Revnew, Inc.</h3><span class="dates">Aug 2021 – Present</span></div>
+    <div class="job-head"><p class="role">Head of Operations</p><span class="dates">Oct 2022 – Present</span></div>
+    <ul>
+      <li>Oversee operations and customer success, working closely with clients and cross-functional teams</li>
+      <li>Lead retention-focused initiatives, build success roadmaps and streamline workflows</li>
+    </ul>
+    <div class="job-head"><p class="role">Customer Success Manager</p><span class="dates">Aug 2021 – Present</span></div>
+    <ul>
+      <li>Own onboarding and account management as the main point of contact for customers and partners</li>
+      <li>Run QBRs, renewals and upsells, and grow each customer's lifetime revenue through a shared vision and roadmap</li>
+      <li>Deliver success blueprints, service plans and business roadmaps covering success factors, metrics, risks and recommendations</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3 class="org">Independent AI Projects</h3><span class="dates">Side projects · Ongoing</span></div>
+    <p class="role">Builder &amp; Operator</p>
+    <ul>
+      <li>Designed, built and run several production products on my own infrastructure, using Claude for AI features and Claude Code for development</li>
+      <li>Built Lead Tracker, an AI lead-qualification platform used in production by a B2B lead-generation team (details below)</li>
+      <li>Handle security reviews, email deliverability, backups with restore tests, and incident recovery end to end</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3 class="org">MarketJoy, Inc.</h3><span class="dates">Sep 2016 – Jul 2021</span></div>
+    <p class="role">Customer Success Manager</p>
+    <ul>
+      <li>Managed client engagement and the full customer lifecycle in a high-growth B2B lead-generation company</li>
+    </ul>
+  </div>
+
+  <h2>AI Projects</h2>
+
+  <div class="project">
+    <h3><a href="https://xcloudcrm.com">Lead Tracker</a>: AI lead qualification</h3>
+    <ul>
+      <li>Multi-tenant, white-label platform: agents submit call notes and Claude grades each lead against the client's criteria and ideal customer profile within seconds</li>
+      <li>Admins confirm or override every verdict with a full audit trail; overrides became training data for a lead-scoring model</li>
+      <li>Per-campaign duplicate, suppression and do-not-call checks; model choice by cost and data sensitivity; encrypted bring-your-own API keys</li>
+    </ul>
+    <p class="stack">Node.js · React · PostgreSQL · Docker · Claude</p>
+  </div>
+
+  <div class="project">
+    <h3>AI-reviewed trading system</h3>
+    <ul>
+      <li>Daily Claude review of trades returns structured per-stock recommendations that set the next day's plan, with a rule-based fallback</li>
+      <li>Evaluated the AI filter against real trade outcomes before relying on it, and changed its rules based on the data</li>
+    </ul>
+    <p class="stack">Node.js · SQLite · Claude · Telegram</p>
+  </div>
+
+  <div class="project">
+    <h3>Email CRM &amp; workflow automation</h3>
+    <ul>
+      <li>Outreach CRM with send pacing, reply and bounce detection, automatic suppression and bot-filtered click tracking</li>
+      <li>Self-hosted n8n automation with nightly backups and version-controlled workflow exports</li>
+    </ul>
+    <p class="stack">Node.js · BullMQ · PostgreSQL · n8n</p>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skill-group"><strong>Customer &amp; operations</strong>
+    <div class="chips"><span>Customer Success</span><span>Account Management</span><span>Onboarding</span><span>QBRs</span><span>Renewals &amp; Upsells</span><span>Operations Management</span><span>Process Improvement</span><span>Stakeholder Communication</span></div>
+  </div>
+  <div class="skill-group"><strong>AI</strong>
+    <div class="chips"><span>Generative AI</span><span>Large Language Models</span><span>Claude / Anthropic API</span><span>Claude Code</span><span>Prompt Engineering</span><span>AI Evaluation</span><span>Human-in-the-loop Design</span></div>
+  </div>
+  <div class="skill-group"><strong>Technical</strong>
+    <div class="chips"><span>Node.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Linux Server Admin</span><span>n8n</span><span>Email Deliverability</span><span>HTML &amp; CSS</span></div>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Computer Applications</strong><br>Modern Education Society's Ness Wadia College of Commerce, Pune<br><span class="dates">2012 – 2015</span></p>
+      <p>St. Anthony's Higher Secondary School, Shillong</p>
     </div>
-    <div class="Top-container">
-      <img class="Top-cloud" src="images/Cloud.png" alt="Cloud">
-      <h1>I'm Lam.</h1>
-      <h2>a <span class="pro">Web</span>-developer.</h2>
-      <img class="Bottom-cloud" src="images/Cloud.png" alt="Cloud">
-      <img class="mountain" src="images/mountain2.png" alt="Cloud">
+    <div>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Project Management Foundations: Communication</li>
+        <li>Building Rapport with Customers</li>
+        <li>Customer Service and Support During Economic Downturns</li>
+        <li>Customer Service: Call Control Strategies</li>
+      </ul>
+      <h2>Languages</h2>
+      <p>English · Hindi · Paite (native) · Khasi (limited working)</p>
     </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="images/xuan.png" alt="suan">
-        <h2>Hello.</h2>
-        <p class="intro">I'm a web developer and a savvy marketeer who is ready to face any web challenges and spin the best site for you.</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="code-img" src="images/code3.png" alt="code">
-          <h3>Design & Development</h3>
-          <p>Being a saavy developer I've been equipt to get you the best of both world
-          i.e., build a presentable website as well as add my marketing expertise
-          to enhance the contents.</p>
-        </div>
-        <div class="skill-row">
-          <img class="challenge-img" src="images/challenge.png" alt="Challenge">
-          <h3>Challenge</h3>
-          <p>A website will not only let your online presence be know but your prospective clients will know what to expect as you present your capabilities and act as a portal for them
-         to familiarize with your work.</p>
-        </div>
-      </div>
-      <hr>
-      <div >
-        <h2>Get In Touch</h2>
-        <h3>Interested in getting a website?</h3>
-        <p class="contact-message">With a passion for creating professional and descriptive websites
-          to help generate inbound leads, let's get in touch.</p>
-      
-        <p>evermontpaite@gmail.com</p>
-       
-      </div>
-    </div>
-    <div class="bottom-container">
-      
-     
-      <p class="copyright">© 2020 xuanpaite</p>
-    </div>
-  </body>
+  </div>
+</main>
+<footer>© 2026 Lam Khansuan Tonsing</footer>
+</body>
 </html>
